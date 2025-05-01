@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de Turismo | Massapê-CE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      :root {
+        --primary-color: #194a99;
+        --secondary-color: #2095c2;
+        --terciary-color: #2a9134;
+        --background-color: #194a99;
+        --green-edit: #90ee90;
+        --soft-blue: #6bb7d6;
+        --ultra-soft-blue: #eff5fa;
+        --red-warning: #d0342c;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="bg-[var(--primary-color)] w-full h-10 flex justify-center sticky"
+    >
+      <div class="container flex justify-between items-center h-full px-6">
+        <h1 class="text-white text-xl font-bold">Massapê-CE | Destino 1</h1>
+        <img
+          src="../../public/massape/brasao-massape.png"
+          alt="Brasão de Massapê"
+          class="h-6"
+        />
+      </div>
+    </header>
+
+    <main
+      class="bg-[var(--ultra-soft-blue)] w-full h-auto min-h-[calc(100vh-5rem)] flex justify-center"
+    >
+      <div class="container flex flex-col items-center h-auto gap-4 mb-6">
+        <img
+          src="../../public/massape/massape.jpg"
+          alt="Banner Destino 1"
+          class="w-full h-auto mt-4 rounded-lg"
+        />
+
+        <h2 class="w-[80%] text-center font-semibold">É um destino muito bla bla bla lorem ipsum bola pra frente mete marcha e cuida.</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2 px-4 w-full max-w-3xl">
+          <button
+            class="text-base py-3 px-4 font-semibold w-full max-w-[300px] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-lg flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-105 mx-auto"
+          >
+            Instagram
+          </button>
+          <button
+            class="text-base py-3 px-4 font-semibold w-full max-w-[300px] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-lg flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-105 mx-auto"
+          >
+            Whatsapp
+          </button>
+          <button
+            class="text-base py-3 px-4 font-semibold w-full max-w-[300px] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-lg flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-105 mx-auto"
+          >
+            Aplicativo
+          </button>
+          <button
+            class="text-base py-3 px-4 font-semibold w-full max-w-[300px] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-lg flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-105 mx-auto"
+          >
+            Localização
+          </button>
+        </div>
+
+        <div style="margin-top: 1.5rem;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img style="border-radius: 1rem;" class="d-block w-100" src="../../public/massape/massape.jpg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+              <img style="border-radius: 1rem;" class="d-block w-100" src="../../public/massape/massape-bg.png" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+              <img style="border-radius: 1rem;" class="d-block w-100" src="../../public/massape/massape.jpg" alt="Terceiro Slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer
+      class="bg-[var(--soft-blue)] w-full h-10 flex justify-center items-center"
+    >
+      <p class="text-sm text-center text-white font-semibold">
+        Prefeitura de Massapê - CE
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
