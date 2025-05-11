@@ -1,62 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guia de Turismo | Massapê-CE</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --primary-color: #194a99;
-      --secondary-color: #2095c2;
-      --terciary-color: #2a9134;
-      --background-color: #194a99;
-      --green-edit: #90ee90;
-      --soft-blue: #6bb7d6;
-      --ultra-soft-blue: #eff5fa;
-      --red-warning: #d0342c;
-      --yellow-primary: #fac501;
-    }
-  </style>
-  <link rel="shortcut icon" href="./public/massape/brasao-massape.png" type="image/x-icon">
-</head>
-<body class="bg-[var(--ultra-soft-blue)]">
-  <header class="bg-[var(--primary-color)] w-full h-12 flex justify-center sticky top-0 z-50">
-    <div class="container max-w-screen-lg flex justify-between items-center h-full px-6">
-      <h1 class="text-white text-base sm:text-xl font-bold">Guia de Turismo | Massapê-CE</h1>
-      <img src="./public/massape/brasao-massape.png" alt="Brasão de Massapê" class="h-6 sm:h-8" />
-    </div>
-  </header>
-
-  <main class="w-full flex justify-center py-6 min-h-[calc(100vh-5rem)]">
-    <div class="container max-w-screen-lg flex flex-col items-center gap-6 px-4">
-      <img src="./public/massape/massape-bg.png" alt="Banner de Massapê" class="w-[85%] h-auto rounded-lg shadow-md md:w-[80%] lg:w-[70%]" />
-
-      <!-- Grid com responsividade -->
-      <div class="w-[85%] md:w-[80%] lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a style="background-image: url('/destinos/massape-destino.png');" href="./links/sobre.html" class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
-          Sobre nós
-        </a>
-        <a style="background-image: url('/inicio/fundo-destinos.png');" href="./links/destinos.html" class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
-          Destinos
-        </a>
-        <a style="background-image: url('/inicio/fundo-hospedagens.png');" href="./links/hospedagem.html" class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
-          Hospedagem
-        </a>
-        <a style="background-image: url('/inicio/fundo-gastronomia.png');" href="./links/gastronomia.html" class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
-          Gastronomia
-        </a>
-        <a style="background-image: url('/inicio/fundo-eventos.png');" href="./links/eventos.html" class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
-          Eventos
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de Turismo | Massapê-CE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --primary-color: #194a99;
+        --secondary-color: #2095c2;
+        --terciary-color: #2a9134;
+        --background-color: #194a99;
+        --green-edit: #90ee90;
+        --soft-blue: #6bb7d6;
+        --ultra-soft-blue: #eff5fa;
+        --red-warning: #d0342c;
+        --yellow-primary: #fac501;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="./public/massape/brasao-massape.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-[var(--ultra-soft-blue)]">
+    <header
+      class="bg-[var(--primary-color)] w-full h-12 flex justify-center sticky top-0 z-50"
+    >
+      <div
+        class="container max-w-screen-lg flex justify-between items-center h-full px-6"
+      >
+        <h1 class="text-white text-base sm:text-xl font-bold">
+          Guia de Turismo | Massapê-CE
+        </h1>
+        <img
+          src="./public/massape/brasao-massape.png"
+          alt="Brasão de Massapê"
+          class="h-6 sm:h-8"
+        />
       </div>
-    </div>
-  </main>
+    </header>
 
-  <footer class="bg-[var(--soft-blue)] w-full h-12 flex justify-center items-center">
-    <p class="text-sm text-center text-white font-semibold">Prefeitura de Massapê - CE</p>
-  </footer>
+    <main class="w-full flex justify-center py-6 min-h-[calc(100vh-5rem)]">
+      <div
+        class="container max-w-screen-lg flex flex-col items-center gap-6 px-4"
+      >
+        <img
+          src="./public/massape/massape-bg.png"
+          alt="Banner de Massapê"
+          class="w-[85%] h-auto rounded-lg shadow-md md:w-[80%] lg:w-[70%]"
+        />
 
-  <script src="script.js"></script>
-</body>
+        <!-- Grid com responsividade -->
+        <div
+          class="w-[85%] md:w-[80%] lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <a
+            style="
+              background-image: url('/destinos/massape-destino.png');
+            "
+            href="./links/sobre.html"
+            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          >
+            Sobre nós
+          </a>
+          <a
+            style="background-image: url('/inicio/fundo-destinos.png')"
+            href="./links/destinos.html"
+            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          >
+            Destinos
+          </a>
+          <a
+            style="
+              background-image: url('/inicio/fundo-hospedagens.png');
+            "
+            href="./links/hospedagem.html"
+            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          >
+            Hospedagem
+          </a>
+          <a
+            style="
+              background-image: url('/inicio/fundo-gastronomia.png');
+            "
+            href="./links/gastronomia.html"
+            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          >
+            Gastronomia
+          </a>
+          <a
+            style="background-image: url('/inicio/fundo-eventos.png')"
+            href="./links/eventos.html"
+            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+          >
+            Eventos
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-[var(--soft-blue)] w-full h-12 flex justify-center items-center"
+    >
+      <p class="text-sm text-center text-white font-semibold">
+        Prefeitura de Massapê - CE
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
