@@ -1,10 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Massapê Fascinante</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <style>
       :root {
         --primary-color: #194a99;
@@ -17,106 +38,10 @@
         --red-warning: #d0342c;
         --yellow-primary: #fac501;
       }
-      #sobre {
-        background-image: url("./public/destinos/massape-destino.png");
-      }
-      #destinos {
-        background-image: url("./public/inicio/fundo-destinos.png");
-      }
-      #hospedagem {
-        background-image: url("./public/inicio/fundo-hospedagens.png");
-      }
-      #gastronomia {
-        background-image: url("./public/inicio/fundo-gastronomia.png");
-      }
-      #eventos {
-        background-image: url("./public/inicio/fundo-eventos.png");
-      }
     </style>
-    <link
-      rel="shortcut icon"
-      href="./public/massape/brasao-massape.png"
-      type="image/x-icon"
-    />
   </head>
-  <body class="bg-[var(--ultra-soft-blue)]">
-    <header
-      class="bg-[var(--primary-color)] w-full h-auto flex justify-center sticky"
-    >
-      <div
-        class="container flex flex-col justify-center items-center h-full px-6 gap-2"
-      >
-        <div class="h-auto w-full flex items-center justify-center">
-          <img
-            src="./public/massape/logo-massape-fascinante.png"
-            alt=""
-            class="lg:max-w-[50%] md:max-w-[70%] max-w-full h-auto mt-2 mb-2"
-          />
-        </div>
-      </div>
-    </header>
-
-    <main class="w-full flex justify-center py-6 min-h-[calc(100vh-5rem)]">
-      <div
-        class="container max-w-screen-lg flex flex-col items-center gap-6 px-4"
-      >
-        <img
-          src="./public/massape/massape-bg.png"
-          alt="Banner de Massapê"
-          class="w-[85%] h-auto rounded-lg shadow-md md:w-[80%] lg:w-[70%]"
-        />
-
-        <!-- Grid com responsividade -->
-        <div
-          class="w-[85%] md:w-[80%] lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <a
-            id="sobre"
-            href="./links/sobre.html"
-            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
-          >
-            Sobre nós
-          </a>
-          <a
-            id="destinos"
-            href="./links/destinos.html"
-            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
-          >
-            Destinos
-          </a>
-          <a
-            id="hospedagem"
-            href="./links/hospedagem.html"
-            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
-          >
-            Hospedagem
-          </a>
-          <a
-            id="gastronomia"
-            href="./links/gastronomia.html"
-            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
-          >
-            Gastronomia
-          </a>
-          <a
-            id="eventos"
-            href="./links/eventos.html"
-            class="bg-no-repeat bg-cover bg-center text-lg font-bold aspect-[3/1] bg-[var(--primary-color)] text-white border-4 border-[var(--soft-blue)] rounded-2xl flex items-center justify-center no-underline shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
-          >
-            Eventos
-          </a>
-        </div>
-      </div>
-    </main>
-
-    <footer
-      class="bg-[var(--soft-blue)] w-full h-12 flex justify-center items-center"
-    >
-      <p class="text-sm text-center text-white font-semibold">
-        Prefeitura de Massapê - CE
-      </p>
-    </footer>
-
-    <script src="script.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
